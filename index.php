@@ -13,6 +13,9 @@
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
             <span class="fs-4">Доставка воды</span>
           </a>
+          <a href= Data_list.php class="d-flex align-items-center text-dark text-decoration-none">
+            <span class="fs-5"> Все заказы </span>
+          </a>
         </header>
       </div>
 
@@ -181,7 +184,7 @@
           else if((amount_water == '0') || !/^[0-9]+$/.test(amount_water)){
     				alert('Введите корректное количество воды !!!');
           }
-          else if(!/^[0-9]+$/.test(tare_quantity)){
+          else if((amount_water == '') && !/^[0-9]+$/.test(tare_quantity)){
     				alert('Введите корректное количество сдаваемой тары !!!');
           }
     			else if(email == ''){
